@@ -1,0 +1,6 @@
+metrics:
+  BalancedAccuracy:
+    name: BalancedAccuracy
+    own_implementation: True
+    format: '.2%'
+    subject_to: max

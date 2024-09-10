@@ -1,0 +1,8 @@
+config_path: ./configs/
+dataset_path: ./data/
+history_path: ./histories/
+checkpoint_path: ./checkpoints/
+
+
+seed: 42
+data_seed: 42

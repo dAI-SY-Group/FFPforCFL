@@ -1,0 +1,7 @@
+experiment_name: FedMedMNISTLF_FedAvg+T
+
+base_configs:
+  - paths
+  - training/FedMedMNIST_FedAvg+T
+  - data/FedMedMNISTLF
+  - models/CNNPFL

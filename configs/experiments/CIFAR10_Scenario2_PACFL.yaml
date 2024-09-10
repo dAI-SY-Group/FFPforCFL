@@ -1,0 +1,9 @@
+experiment_name: CIFAR10_Scenario2_PACFL
+
+base_configs:
+  - paths
+  - training/CIFAR10_PACFL
+  - data/CIFAR10
+  - data/Scenario2
+  - models/CNN
+  - fingerprint/PACFL

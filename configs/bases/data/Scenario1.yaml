@@ -1,0 +1,4 @@
+data_distribution_config:
+    partition_mode: disjoint_shards
+    num_varying_clusters: 5
+    num_classes_per_client: 2

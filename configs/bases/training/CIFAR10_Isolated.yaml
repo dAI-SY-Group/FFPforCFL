@@ -1,0 +1,61 @@
+#TRAINING
+training:
+  environment: IsolatedClustersEnvironment
+  trainer: PFLTrainer
+  client_class: PFLClient
+  clusters: 
+    cluster_class: FedAvgCluster
+    cluster_n: 100
+    communication_rounds: 1
+    early_stopping: #False or dict with parameters
+      patience: 50
+      delta: 0.001 # Minimum change in the monitored quantity to qualify as an improvement
+      metric: CrossEntropy
+      use_loss: True
+      subject_to: min #min / max
+      verbose: False
+  personal_model_head: False
+
+  num_clients: 100
+  weigh_sample_quantity: True
+  epochs: 1
+  save_rounds: [] #save a checkpoint every ... rounds (epochs); set equal to epochs if you dont want sepcific epoch states (LOCAL)
+  batch_size: 64
+  loss: CrossEntropy
+  metrics: [SKAccuracy, BalancedAccuracy] #List of Train Metrics to look at during training
+  validation_frequency: 1 #number of rounds after which the model will be evaluated on the data given as tst_data (val data)
+  optimizer: 
+    name: SGD
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+  lr_scheduler: False
+  early_stopping: #Local Early Stopper only used for tracking best model state
+    patience: 300
+    delta: 0 # Minimum change in the monitored quantity to qualify as an improvement
+    metric: CrossEntropy
+    use_loss: True
+    subject_to: min #min / max
+    verbose: False
+  random_client_start: False
+  tuning: 
+    epochs: 5
+    lr: 0.0001
+  glob:
+    communication_rounds: 300
+    validation_frequency: 1
+    save_rounds: [] #[1, 10, 25, 50, 100] #save a checkpoint every ... rounds (epochs); set equal to epochs if you dont want sepcific epoch states (GLOBAL)
+    early_stopping: 
+      patience: 50
+      delta: 0.001 # Minimum change in the monitored quantity to qualify as an improvement
+      metric: CrossEntropy
+      use_loss: True
+      subject_to: min #min / max
+      verbose: False
+
+#EVAL
+eval:
+  skip_test_data_during_training: True
+  local_models: True
+  available_classes_test_data: True
+  local_splits: True

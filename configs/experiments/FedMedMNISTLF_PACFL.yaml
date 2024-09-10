@@ -1,0 +1,8 @@
+experiment_name: FedMedMNISTLF_PACFL
+
+base_configs:
+  - paths
+  - training/FedMedMNIST_PACFL
+  - data/FedMedMNISTLF
+  - models/CNNPFL
+  - fingerprint/PACFL

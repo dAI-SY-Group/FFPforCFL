@@ -1,0 +1,26 @@
+CIFAR10: classification/CIFAR10.yaml
+
+## MedMNIST Datasets
+MedMNISTBlood: classification/MedMNISTBlood.yaml
+MedMNISTBlood32: classification/MedMNISTBlood32.yaml
+
+MedMNISTBreast: classification/MedMNISTBreast.yaml
+
+MedMNISTDerma: classification/MedMNISTDerma.yaml
+MedMNISTDerma32: classification/MedMNISTDerma32.yaml
+
+MedMNISTOrganA: classification/MedMNISTOrganA.yaml
+MedMNISTOrganC: classification/MedMNISTOrganC.yaml
+MedMNISTOrganS: classification/MedMNISTOrganS.yaml
+
+
+MedMNISTPneumonia: classification/MedMNISTPneumonia.yaml
+MedMNISTPneumonia32: classification/MedMNISTPneumonia32.yaml
+MedMNISTPneumonia3C: classification/MedMNISTPneumonia3C.yaml
+MedMNISTPneumonia3C32: classification/MedMNISTPneumonia3C32.yaml
+
+MedMNISTRetina: classification/MedMNISTRetina.yaml
+MedMNISTRetina32: classification/MedMNISTRetina32.yaml
+
+FedMedMNISTLF: classification/FedMedMNISTLF.yaml
+FedMedMNISTLFQ: classification/FedMedMNISTLFQ.yaml

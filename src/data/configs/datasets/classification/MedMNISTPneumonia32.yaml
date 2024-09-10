@@ -1,0 +1,23 @@
+#DATA
+data:
+  dataset: MedMNISTPneumonia
+  dataloader: image
+  mean: [0.5719215,]
+  std:  [0.1683513,]
+  shape: [1, 32, 32]
+  train_transformations:
+    ToTensor: []
+    Normalize: []  
+    Resize: [[32, 32]]
+  val_transformations:
+    ToTensor: []
+    Normalize: []  
+    Resize: [[32, 32]]
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  num_classes: 2
+num_classes: 2
+
+training:
+  num_clients: 10

@@ -1,0 +1,21 @@
+#DATA
+data:
+  dataset: FedMedMNISTLF
+  dataloader: image
+  shape: [3, 32, 32]
+  mean: [0.53891956, 0.47474771, 0.4711051]
+  std: [0.23611138, 0.22933859, 0.2095167]
+  prepped_version: reduced_fedmedmnist_32
+  train_transformations:
+    ToTensor: []
+  val_transformations:
+    ToTensor: []
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  client_list: ['MedMNISTBlood', 'MedMNISTBreast', 'MedMNISTDerma', 'MedMNISTOrganA', 'MedMNISTOrganC', 'MedMNISTOrganS', 'MedMNISTPneumonia', 'MedMNISTRetina']
+  split_clients: [24, 1, 14, 69, 26, 28, 9, 2] # such that each client has about 500 training samples
+  num_classes_per_client: [8, 2, 7, 11, 11, 11, 2, 5]
+
+data_distribution_config:
+  partition_mode: IID

@@ -1,0 +1,8 @@
+experiment_name: FedMedMNISTLF_FFP
+
+base_configs:
+  - paths
+  - training/FedMedMNIST_FFP
+  - data/FedMedMNISTLF
+  - models/CNNPFL
+  - fingerprint/FFP

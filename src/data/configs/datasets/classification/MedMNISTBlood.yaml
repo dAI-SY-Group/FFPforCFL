@@ -1,0 +1,21 @@
+#DATA
+data:
+  dataset: MedMNISTBlood
+  dataloader: image
+  mean: [0.79434784, 0.65965901, 0.69619251]
+  std:  [0.21563033, 0.24160339, 0.11788897]
+  shape: [3, 28, 28]
+  train_transformations:
+    ToTensor: []
+    Normalize: []  
+  val_transformations:
+    ToTensor: []
+    Normalize: []  
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  num_classes: 8
+num_classes: 8
+
+training:
+  num_clients: 10

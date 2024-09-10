@@ -1,0 +1,21 @@
+#DATA
+data:
+  dataset: MedMNISTDerma
+  dataloader: image
+  mean: [0.76311177, 0.53808844, 0.56138754]
+  std:  [0.13660513, 0.15425384, 0.16921604]
+  shape: [3, 28, 28]
+  train_transformations:
+    ToTensor: []
+    Normalize: []  
+  val_transformations:
+    ToTensor: []
+    Normalize: []  
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  num_classes: 7
+num_classes: 7
+
+training:
+  num_clients: 10

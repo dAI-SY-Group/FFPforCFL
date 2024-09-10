@@ -1,0 +1,7 @@
+experiment_name: FedMedMNISTLF_Isolated
+
+base_configs:
+  - paths
+  - training/FedMedMNIST_Isolated
+  - data/FedMedMNISTLF
+  - models/CNNPFL

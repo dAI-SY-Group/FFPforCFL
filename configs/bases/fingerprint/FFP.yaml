@@ -1,0 +1,5 @@
+data_distribution_config:
+  fingerprint:
+    generator_mode: SVD
+    data_mode: features
+    feature_extractor: MobileNetS

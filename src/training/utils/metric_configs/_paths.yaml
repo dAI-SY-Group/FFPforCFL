@@ -1,0 +1,4 @@
+#base_path: configs/_metrics/bases/
+Accuracy: accuracy
+SKAccuracy: accuracy
+BalancedAccuracy: balanced_accuracy

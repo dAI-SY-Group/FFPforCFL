@@ -1,0 +1,21 @@
+#DATA
+data:
+  dataset: MedMNISTOrganS
+  dataloader: image
+  mean: [0.49502653859248147,]
+  std:  [0.28280552760448385,]
+  shape: [1, 28, 28]
+  train_transformations:
+    ToTensor: []
+    Normalize: []  
+  val_transformations:
+    ToTensor: []
+    Normalize: []  
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  num_classes: 11
+num_classes: 11
+
+training:
+  num_clients: 5

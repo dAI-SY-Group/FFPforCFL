@@ -1,0 +1,8 @@
+experiment_name: CIFAR10_Scenario1_FedAvg+T
+
+base_configs:
+  - paths
+  - training/CIFAR10_FedAvg+T
+  - data/CIFAR10
+  - data/Scenario1
+  - models/CNN

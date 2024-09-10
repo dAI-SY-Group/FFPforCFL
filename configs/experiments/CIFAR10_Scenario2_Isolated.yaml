@@ -1,0 +1,8 @@
+experiment_name: CIFAR10_Scenario2_Isolated
+
+base_configs:
+  - paths
+  - training/CIFAR10_Isolated
+  - data/CIFAR10
+  - data/Scenario2
+  - models/CNN

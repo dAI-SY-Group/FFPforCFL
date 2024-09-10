@@ -1,0 +1,21 @@
+#DATA
+data:
+  dataset: MedMNISTRetina
+  dataloader: image
+  mean: [0.39838934, 0.24472672, 0.15575321]
+  std:  [0.29828665, 0.20048255, 0.15065962] 
+  shape: [3, 28, 28]
+  train_transformations:
+    ToTensor: []
+    Normalize: []  
+  val_transformations:
+    ToTensor: []
+    Normalize: []  
+  shuffle: True
+  use_val: True
+  create_validation_split: 0.1
+  num_classes: 5
+num_classes: 5
+
+training:
+  num_clients: 10

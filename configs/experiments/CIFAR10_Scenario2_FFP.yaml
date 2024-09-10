@@ -1,0 +1,9 @@
+experiment_name: CIFAR10_Scenario2_FFP
+
+base_configs:
+  - paths
+  - training/CIFAR10_FFP
+  - data/CIFAR10
+  - data/Scenario2
+  - models/CNN
+  - fingerprint/FFP
