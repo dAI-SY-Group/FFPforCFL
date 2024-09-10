@@ -134,4 +134,6 @@ dmypy.json
 *.DS_Store*
 *Syno*
 checkpoints/*
+!checkpoints/.gitkeep
 histories/*
+!histories/.gitkeep
